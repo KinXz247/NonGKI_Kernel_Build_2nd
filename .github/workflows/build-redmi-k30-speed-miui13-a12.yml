@@ -6,7 +6,7 @@ on:
 
 env:
   # Device env
-  DEVICE_NAME : "redmi_k30"
+  DEVICE_NAME : "redmi_k30_speed"
   DEVICE_CODENAME : "picasso"
 
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
@@ -25,19 +25,18 @@ env:
   GCC_32_BRANCH : "android12L-release"
 
   DEFCONFIG_SOURCE: ""
-  DEFCONFIG_NAME : "vendor/picasso_user_defconfig"
+  DEFCONFIG_NAME : "picasso_user_defconfig"
   DEFCONFIG_ORIGIN_IMAGE: ""
   DEFCONFIG_FROM_BOOT: false
 
-  KERNELSU_SOURCE : "https://github.com/tiann/KernelSU/blob/v3.2.4/kernel/setup.sh"
-  KERNELSU_BRANCH : "v3.2.4"
+  KERNELSU_SOURCE : "https://github.com/tiann/KernelSU/blob/main/kernel/setup.sh"
+  KERNELSU_BRANCH : "main"
 
   KERNELSU_AUTO_GET : "true" # if u want easy setting kernelsu, u can true.
   KERNELSU_AUTO_FORK : "resukisu" # magic, rsuntk, next, resukisu and sukisu
 
   SUSFS_ENABLE : true
   SUSFS_FIXED : false
-  SUSFS_UPDATE : true
 
   AK3_SOURCE : "https://github.com/osm0sis/AnyKernel3.git"
   AK3_BRANCH : "master"
